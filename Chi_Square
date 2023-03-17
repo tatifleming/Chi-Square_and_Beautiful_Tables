@@ -1,0 +1,19 @@
+# Import libraries
+from scipy.stats import chi2_contingency
+from scipy import stats
+#O primeiro valor é o valor do qui-quadrado calculado, depois vem os graus de liberdade, seguido pelo valor p-valor e, por último, as frequências esperadas como uma matriz. 
+
+chi2_stat, p_val, dof, ex = stats.chi2_contingency(pd.crosstab(CI_d['RD'], CI_d.nd))
+print("Chi Square Test")
+print("---Chi-Stat---")
+print(chi2_stat)
+print("\n")
+print("---Degrees of Freedom---")
+print(dof)
+print("\n")
+print("---P-Value---")
+print(p_val)
+print("\n")
+print("---Contingency Table---")
+print(ex)
+
