@@ -1,0 +1,12 @@
+# inverter ordem as linhas
+result_ci_d_reversed = result_ci_d_2.iloc[::-1]
+
+# cross tabs 
+CI_d1 = pd.crosstab(CI_d['RD'], CI_d.nd, margins=True, margins_name="Total")
+CI_d2 = pd.crosstab(CI_d['T'], CI_d.nd, margins=True, margins_name="Total")
+CI_d3 = pd.crosstab(CI_d['Q'], CI_d.nd, margins=True, margins_name="Total")
+CI_d4 = pd.crosstab(CI_d['V_g'], CI_d.nd, margins=True, margins_name="Total")
+CI_d5 = pd.crosstab(CI_d['V_r'], CI_d.nd, margins=True, margins_name="Total")
+CI_d6 = pd.crosstab(CI_d['H_p'], CI_d.nd, margins=True, margins_name="Total")
+CI_d7 = pd.crosstab(CI_d['H_f'], CI_d.nd, margins=True, margins_name="Total")
+CI_d8 = pd.crosstab(CI_d['alpha'], CI_d.nd, margins=True, margins_name="Total")
